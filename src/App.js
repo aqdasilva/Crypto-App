@@ -1,10 +1,20 @@
-import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar.jsx';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>CryptoCastle</h1>
+    <div className='app'>
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className='main'>
+
+      </div>
+      <div className='footer'>
+
+      </div>
     </div>
   );
 }
