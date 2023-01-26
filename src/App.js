@@ -8,8 +8,8 @@ import CryptoDetails from './components/CryptoDetails';
 import News from './components/News';
 import './App.css';
 import Layout from 'antd/es/layout/layout';
-import { Switch } from 'antd';
-import { Route } from 'react-router-dom';
+import { Space, Switch, Typography } from 'antd';
+import { Link, Route } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -39,9 +39,18 @@ const App = () => {
             </Switch>
           </div>
         </Layout>
-      </div>
-      <div className='footer'>
 
+      <div className='footer'>
+          <Typography.Title  level={5} style={{ color: 'white', textAlign: 'center'}}>
+            CryptoCastle <br />
+            All Rights Reserved
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   );
